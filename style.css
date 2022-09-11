@@ -114,7 +114,7 @@ h1 {
 }
 
 .plan {
-  margin-left: -20px;
+  margin-left: -40px;
 }
 
 .btn {
@@ -174,5 +174,22 @@ h1 {
 
   .container {
     max-width: 455px;
+  }
+
+  .container p {
+    padding: 0 80px;
+  }
+
+  .container .pricing,
+  .btn-primary {
+    width: 80%;
+  }
+
+  .btn-secondary {
+    margin-bottom: 30px;
+  }
+
+  .plan {
+    margin-left: -70px;
   }
 }
