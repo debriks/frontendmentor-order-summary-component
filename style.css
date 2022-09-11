@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;800;900&display=swap");
+
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--primary-pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--desaturated-blue);
+}
+
+button {
+  font-family: inherit;
+}
+
+h1 {
+  margin: 30px 0 20px 0;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/* MOBILE STYLES */
+/* MOBILE STYLES */
+/* MOBILE STYLES */
+
+.bg__image {
+  background: url(images/pattern-background-mobile.svg) no-repeat center/cover;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.container {
+  background-color: white;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px hsla(223, 47%, 23%, 0.15);
+  padding-bottom: 20px;
+}
+
+.container p {
+  padding: 0 45px 0 45px;
+}
+
+.container img.hero {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.container .pricing {
+  margin: 20px auto 30px;
+  padding: 15px;
+  background-color: var(--very-pale-blue);
+  width: 85%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .pricing article {
+  display: flex;
+  align-items: center;
+}
+
+.container .pricing article img {
+  margin-right: 10px;
+}
+
+.container .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan {
+  margin-left: -20px;
+}
+
+.btn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-change {
+  background-color: transparent;
+  color: var(--primary-bright-blue);
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: var(--primary-bright-blue);
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 85%;
+  box-shadow: 3px 15px 20px hsl(245, 75%, 52%, 0.25);
+}
+
+.btn-primary,
+.btn-secondary {
+  font-size: 1rem;
+}
+
+.btn-primary:hover,
+.btn-change:hover {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--desaturated-blue);
+  margin-bottom: 10px;
+}
+
+.btn-secondary:hover {
+  color: var(--dark-blue);
+}
+
+/* DESKTOP STYLES */
+/* DESKTOP STYLES */
+/* DESKTOP STYLES */
+
+@media (min-width: 48rem) {
+  .bg__image {
+    background: url(images/pattern-background-desktop.svg) no-repeat
+      center/cover;
+    height: 50vh;
+  }
+
+  .container {
+    max-width: 455px;
+  }
+}
